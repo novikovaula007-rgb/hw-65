@@ -21,7 +21,7 @@ const NavBar = () => {
                     </Typography>
 
                     {navigation.map(page => {
-                        return <Button color='inherit' to={`/pages/${page.id}`} component={NavLink}>{page.title}</Button>
+                        return <Button key={page.id} color='inherit' to={`/pages/${page.id}`} component={NavLink}>{page.title}</Button>
                     })}
 
                     <Button color='inherit' to='/pages/admin' component={NavLink}>Admin</Button>
