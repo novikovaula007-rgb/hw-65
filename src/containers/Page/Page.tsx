@@ -43,7 +43,7 @@ const Page = () => {
             {!loading && !currentPage && (<NotFoundPage/>)}
             {!loading && currentPage && (
                 <Box>
-                    <Typography variant='h1'>
+                    <Typography variant='h2'>
                         {currentPage.title}
                     </Typography>
                     <Typography>
